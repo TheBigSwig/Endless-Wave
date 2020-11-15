@@ -1,0 +1,32 @@
+
+
+//The muxInputSelectVGA module is defined.
+module muxInputSelectVGA(input [7:0] x1, x2, input [6:0] y1, y2, input [2:0] colour1, colour2,
+								 input writeEn1, writeEn2, input select,
+								 output reg [7:0] x, output reg [6:0] y, output reg [2:0] colour, output reg writeEn);
+							
+	always@(*)
+	begin
+		case(select)
+			1'b0: begin
+						x = x1;
+						y = y1;
+						colour = colour1;
+						writeEn = writeEn1;
+				end
+			1'b1: begin
+						x = x2;
+						y = y2;
+						colour = colour2;
+						writeEn = writeEn2;
+				end
+			
+			default: begin
+							x = x1;
+							y = y1;
+							colour = colour1;
+							writeEn = writeEn1;
+						end
+		endcase
+	end
+endmodule

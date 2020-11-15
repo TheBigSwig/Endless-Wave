@@ -1,0 +1,30 @@
+
+State Machine - |waveGameFinal|waveGraphicsController:graphicsController|current_state
+Name current_state.S_INFORM_DONE current_state.S_WAIT_DOWNDRAWER current_state.S_WAIT_UPDRAWER current_state.S_START_DRAW_SHIP current_state.S_WAIT_GAME_OVER_SCREEN_DRAWER current_state.S_START_DRAW_GAME_OVER_SCREEN current_state.S_COLLISION_OCCURRED current_state.S_WAIT_COLLISION_CHECKER current_state.S_START_CHECK_COLLISION current_state.S_WAIT_HALLWAYDRAWER current_state.S_START_DRAW_HALLWAY current_state.S_WAIT_SCREENSLIDER current_state.S_START_SLIDE_SCREEN current_state.S_WAIT_GRAPHICS_UPDATE current_state.S_WAIT_DOWNCLEARER current_state.S_WAIT_UPCLEARER current_state.S_START_CLEAR_SHIP current_state.S_IDLE 
+current_state.S_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state.S_START_CLEAR_SHIP 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+current_state.S_WAIT_UPCLEARER 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+current_state.S_WAIT_DOWNCLEARER 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+current_state.S_WAIT_GRAPHICS_UPDATE 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+current_state.S_START_SLIDE_SCREEN 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+current_state.S_WAIT_SCREENSLIDER 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+current_state.S_START_DRAW_HALLWAY 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+current_state.S_WAIT_HALLWAYDRAWER 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+current_state.S_START_CHECK_COLLISION 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+current_state.S_WAIT_COLLISION_CHECKER 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+current_state.S_COLLISION_OCCURRED 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+current_state.S_START_DRAW_GAME_OVER_SCREEN 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.S_WAIT_GAME_OVER_SCREEN_DRAWER 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.S_START_DRAW_SHIP 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.S_WAIT_UPDRAWER 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.S_WAIT_DOWNDRAWER 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.S_INFORM_DONE 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |waveGameFinal|waveGameController:gameController|current_state
+Name current_state.S_UPDATE_OLD_DIR current_state.S_UPDATE_GRAPHICS current_state.S_UPDATE_POS_HALL_TRACERS current_state.S_UPDATE_POS_SHIP current_state.S_CLEAR_SHIP current_state.S_IDLE 
+current_state.S_IDLE 0 0 0 0 0 0 
+current_state.S_CLEAR_SHIP 0 0 0 0 1 1 
+current_state.S_UPDATE_POS_SHIP 0 0 0 1 0 1 
+current_state.S_UPDATE_POS_HALL_TRACERS 0 0 1 0 0 1 
+current_state.S_UPDATE_GRAPHICS 0 1 0 0 0 1 
+current_state.S_UPDATE_OLD_DIR 1 0 0 0 0 1 

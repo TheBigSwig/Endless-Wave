@@ -1,0 +1,152 @@
+# Reading D:/Quartus/QuartusLite/modelsim_ase/tcl/vsim/pref.tcl
+# do waveGameFinal_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/Quartus/QuartusLite/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Eric/Desktop/Work\ and\ School\ Stuff/Second\ Year\ Work/Digital\ Systems/FinalProject/Milestone\ 3/Final\ Project\ Quartus\ -\ November\ 20,\ 2019 {C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject/Milestone 3/Final Project Quartus - November 20, 2019/ram19200x3.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:55:27 on Nov 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject/Milestone 3/Final Project Quartus - November 20, 2019" C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject/Milestone 3/Final Project Quartus - November 20, 2019/ram19200x3.v 
+# -- Compiling module ram19200x3
+# 
+# Top level modules:
+# 	ram19200x3
+# End time: 23:55:28 on Nov 26,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Eric/Desktop/Work\ and\ School\ Stuff/Second\ Year\ Work/Digital\ Systems/FinalProject/Milestone\ 3/Final\ Project\ Quartus\ -\ November\ 20,\ 2019 {C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject/Milestone 3/Final Project Quartus - November 20, 2019/yPosReg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:55:28 on Nov 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject/Milestone 3/Final Project Quartus - November 20, 2019" C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject/Milestone 3/Final Project Quartus - November 20, 2019/yPosReg.v 
+# -- Compiling module yPosReg
+# 
+# Top level modules:
+# 	yPosReg
+# End time: 23:55:28 on Nov 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Eric/Desktop/Work\ and\ School\ Stuff/Second\ Year\ Work/Digital\ Systems/FinalProject/Milestone\ 3/Final\ Project\ Quartus\ -\ November\ 20,\ 2019 {C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject/Milestone 3/Final Project Quartus - November 20, 2019/waveGameFinal.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:55:28 on Nov 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject/Milestone 3/Final Project Quartus - November 20, 2019" C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject/Milestone 3/Final Project Quartus - November 20, 2019/waveGameFinal.v 
+# -- Compiling module waveGameFinal
+# ** Error: C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject/Milestone 3/Final Project Quartus - November 20, 2019/waveGameFinal.v(21): (vlog-2730) Undefined variable: 'newDir'.
+# ** Error (suppressible): C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject/Milestone 3/Final Project Quartus - November 20, 2019/waveGameFinal.v(90): (vlog-2388) 'newDir' already declared in this scope (waveGameFinal).
+# -- Compiling module waveGameDatapath
+# -- Compiling module waveGraphicsDatapath
+# -- Compiling module waveGameController
+# -- Compiling module waveGraphicsController
+# End time: 23:55:28 on Nov 26,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: D:/Quartus/QuartusLite/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./waveGameFinal_run_msim_rtl_verilog.do line 10
+# D:/Quartus/QuartusLite/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Users/Eric/Desktop/Work\ and\ School\ Stuff/Second\ Year\ Work/Digital\ Systems/FinalProject/Milestone\ 3/Fin..."
+cd C:/Us
+# couldn't change working directory to "C:/Us": no such file or directory
+cd C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems
+# wrong # args: should be "cd ?dirName?"
+cd C:/Users/Eric/Desktop/Work+and+School+Stuff
+# couldn't change working directory to "C:/Users/Eric/Desktop/Work+and+School+Stuff": no such file or directory
+cd C:/Users/Eric/Desktop/
+# reading D:/Quartus/QuartusLite/modelsim_ase/win32aloem/../modelsim.ini
+cd C:/Users/Eric/Desktop/Work and School Stuff
+# wrong # args: should be "cd ?dirName?"
+cd "C:/Users/Eric/Desktop/Work and School Stuff"
+cd "C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work"
+cd "C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/Final Project"
+# couldn't change working directory to "C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/Final Project": no such file or directory
+cd "C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject"
+cd "C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject/Milestone 3"
+cd "C:/Users/Eric/Desktop/Work and School Stuff/Second Year Work/Digital Systems/FinalProject/Milestone 3/Final Project Quartus - November 20, 2019"
+do screenSliderSim.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:00:08 on Nov 27,2019
+# vlog -reportprogress 300 screenSlider.v 
+# -- Compiling module screenSlider
+# 
+# Top level modules:
+# 	screenSlider
+# End time: 00:00:08 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim screenSlider 
+# Start time: 00:00:09 on Nov 27,2019
+# Loading work.screenSlider
+do screenSliderSim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:07:52 on Nov 27,2019
+# vlog -reportprogress 300 screenSlider.v 
+# -- Compiling module screenSlider
+# 
+# Top level modules:
+# 	screenSlider
+# End time: 00:07:52 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:07:53 on Nov 27,2019, Elapsed time: 0:07:44
+# Errors: 0, Warnings: 0
+# vsim screenSlider 
+# Start time: 00:07:53 on Nov 27,2019
+# Loading work.screenSlider
+do screenSliderSim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:08:34 on Nov 27,2019
+# vlog -reportprogress 300 screenSlider.v 
+# -- Compiling module screenSlider
+# 
+# Top level modules:
+# 	screenSlider
+# End time: 00:08:34 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:08:35 on Nov 27,2019, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 0
+# vsim screenSlider 
+# Start time: 00:08:36 on Nov 27,2019
+# Loading work.screenSlider
+do addressTranslatorSim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:20:56 on Nov 27,2019
+# vlog -reportprogress 300 addressTranslator.v 
+# -- Compiling module addressTranslator
+# 
+# Top level modules:
+# 	addressTranslator
+# End time: 00:20:56 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:20:57 on Nov 27,2019, Elapsed time: 0:12:21
+# Errors: 0, Warnings: 0
+# vsim addressTranslator 
+# Start time: 00:20:57 on Nov 27,2019
+# Loading work.addressTranslator
+# ** Error (suppressible): (vsim-4008) Object '7' not found.
+# Error in macro ./addressTranslatorSim.do line 25
+# ** Error (suppressible): (vsim-4008) Object '7' not found.
+# 
+#     while executing
+# "force {7} 7'b0000000 20ns"
+do addressTranslatorSim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:21:43 on Nov 27,2019
+# vlog -reportprogress 300 addressTranslator.v 
+# -- Compiling module addressTranslator
+# 
+# Top level modules:
+# 	addressTranslator
+# End time: 00:21:43 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:21:45 on Nov 27,2019, Elapsed time: 0:00:48
+# Errors: 1, Warnings: 0
+# vsim addressTranslator 
+# Start time: 00:21:45 on Nov 27,2019
+# Loading work.addressTranslator
+# End time: 03:59:58 on Nov 27,2019, Elapsed time: 3:38:13
+# Errors: 0, Warnings: 0

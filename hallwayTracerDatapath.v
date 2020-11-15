@@ -1,0 +1,70 @@
+
+
+//The hallwayTracerDatapath module.
+module hallwayTracerDatapath(input gameTick, resetNumberGenerator,
+								input inc_upperHallTracerPos, dec_upperHallTracerPos,
+								input inc_lowerHallTracerPos, dec_lowerHallTracerPos,
+								input clock, reset_n,
+								output [6:0] upperTracerPos, lowerTracerPos,
+								output upperTracerDir, lowerTracerDir);
+			
+
+	//Wires for connecting the positions of the hallway tracers to both the module output
+	//and the internal hallwayTracerDirectionUpdater module.
+	wire [6:0] upperTracerPos_internal, lowerTracerPos_internal;
+	assign upperTracerPos = upperTracerPos_internal;
+	assign lowerTracerPos = lowerTracerPos_internal;
+	
+	//Wires for connecting the directions of the hallway tracers to both the module output
+	//and the internal hallwayTracerDirectionUpdater module.
+	wire upperTracerDir_internal, lowerTracerDir_internal;
+	assign upperTracerDir = upperTracerDir_internal;
+	assign lowerTracerDir = lowerTracerDir_internal;
+	
+	//Wires for connecting the toggle signals from the hallwayTracerDirectionUpdater module
+	//to the hallway tracer direction flip flops.
+	wire toggleUpperTracerDir, toggleLowerTracerDir;
+	
+	//Wires for connecting the random ticks from the tick generator to the hallwayTracerDirectionUpdater.
+	wire randomTick1, randomTick2;
+
+	//The yPosReg modules storing the positions of the upper and lower hallway tracers.
+	yPosReg upperHallTracerPos(.initialValue(7'b0101000), .lowerBound(7'b0000000), .upperBound(7'b1011101),
+										.inc(inc_upperHallTracerPos), .dec(dec_upperHallTracerPos),
+										.clock(clock), .reset_n(reset_n),
+										.yPos(upperTracerPos_internal));
+										
+	yPosReg lowerHallTracerPos(.initialValue(7'b1010000), .lowerBound(7'b0011010), .upperBound(7'b1110111),
+										.inc(inc_lowerHallTracerPos), .dec(dec_lowerHallTracerPos),
+										.clock(clock), .reset_n(reset_n),
+										.yPos(lowerTracerPos_internal));
+										
+										
+	//The TflipFlop modules containing the directions of the hallway tracers.
+	TflipFlop upperHallTracerDir(.T(toggleUpperTracerDir), .clock(clock), .reset_n(reset_n),
+										  .Q(upperTracerDir_internal));
+										  
+	TflipFlop lowerHallTracerDir(.T(toggleLowerTracerDir), .clock(clock), .reset_n(reset_n),
+										  .Q(lowerTracerDir_internal));
+										  
+										  
+										  
+	//The randomTickGenerator module used to give the hallway tracers pseudo-random behaviour.
+	randomTickGenerator tickGenerator(.gameTick(gameTick), .resetNumberGenerator(resetNumberGenerator),
+												 .clock(clock), .reset_n(reset_n),
+												 .randomTick1(randomTick1), .randomTick2(randomTick2));
+												 
+												 
+	//The hallwayTracerDirectionUpdater module, which toggles the direction the hallway tracers are moving
+	//according to pre-defined rules and random chance.
+	hallwayTracerDirectionUpdater tracerDirectionUpdater(.randomTick1(randomTick1), .randomTick2(randomTick2),
+																		  .lowerTracerPos(lowerTracerPos_internal), 
+																		  .upperTracerPos(upperTracerPos_internal),
+																		  .lowerTracerDir(lowerTracerDir_internal),
+																		  .upperTracerDir(upperTracerDir_internal),
+																		  .enable(gameTick), .clock(clock), .reset_n(reset_n),
+																		  .toggleUpperTracerDir(toggleUpperTracerDir),
+																		  .toggleLowerTracerDir(toggleLowerTracerDir));
+																		  
+																		  
+endmodule					
